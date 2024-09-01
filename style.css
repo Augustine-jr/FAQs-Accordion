@@ -1,0 +1,45 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+ font-family: 'Poppins', sans-serif;
+ letter-spacing: -.05em;
+ font-weight: 300;
+ color: white;
+}
+
+html, body{
+  background-color: #161616;
+}
+
+section{
+  display: flex;
+  position: relative;
+  width: 100%;
+  justify-content: center;
+}
+
+.accordion_container{
+  position: relative;
+  width: 80%;
+  margin: 2rem;
+}
+
+.accordion{
+  width: 100%;
+  background-color: #161616;
+  cursor: pointer;
+  padding: 1rem 0;
+  text-align: left;
+  border: none;
+  outline: none;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.274);
+  font-size: 1.5rem;
+}
+
+.accordion_content{
+  max-height: 0;
+  overflow: hidden;
+  opacity: 0 ;
+  transition: max-height .2s ease-out, opacity 2s ;
+}
